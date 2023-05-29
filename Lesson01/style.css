@@ -19,7 +19,7 @@ a:hover {
     color: white;
 }
 
-table, tr, th, td {
+table, tr, th, td, caption {
     border: 1px solid whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
