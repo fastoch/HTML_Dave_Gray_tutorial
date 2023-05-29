@@ -1,5 +1,5 @@
 html {
-    font-size: 22px 
+    font-size: 20px 
 }
 
 body {
@@ -17,4 +17,11 @@ a:visited {
 
 a:hover {
     color: white;
+}
+
+table, tr, th, td {
+    border: 1px solid whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem; /* 10px since root element font-size is 20px */
 }
