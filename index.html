@@ -76,7 +76,7 @@
 
     <article id="contact">
         <h3><u>#Contact me:</u></h3>
-        <form action="https://httpbin.org/get" method="GET">
+        <form action="https://httpbin.org/get" method="get">
             <fieldset>
                 <legend>Personal info</legend>
                 <p>
@@ -89,7 +89,7 @@
                 </p>
                 <p>
                     <label for="phone">Phone number:</label>
-                    <input type="tel" name="phone" id="password" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input type="tel" name="phone" id="password" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </p>
                 <p>
                     <label for="Linux-distro">Favorite Linux Distro:</label>
@@ -148,6 +148,8 @@
             <br>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
+            <!-- The following button overrides the original form action and method -->
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
         </form>
     </article>
 
